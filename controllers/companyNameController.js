@@ -14,7 +14,7 @@ const createCompanyName = (request, response, next) => {
     .status(201)
     .setHeader("Content-Type", "application/json")
     .json({
-      message: `Created category with name of ${request.body.companyName}`,
+      message: `Created category with name of: ${request.body.companyName}`,
     });
 };
 
